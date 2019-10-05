@@ -6,28 +6,27 @@
     <title>Counselling service</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
      
-        <div class="text">
-            <h2>CATE Counselling</h2>
-        </div>
-        <div class="nav">
-            <div class="logo">
-                <img src="images/logo.svg" width="50px" height="50px" alt="logo"
-                class="navbar_logo">
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Fees & Sessions</a></li>
-                <li><a href="data policy.html">Data Policy</a></li>
-                <li><a href="philosophy.html">Philosophy</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="areas of interest.html">Areas of Interest</a></li>
-
-            </ul>
-        </div>
-           
+      <div class="topnav" id="myTopnav">
+          <div class="text">
+                 <h2>CATE Counselling</h2>
+             </div> 
+             <a href="index.html" class="active">Home</a>
+             <a href="fees & Sessions.html">Fees & Sessions</a>
+             <a href="data policy.html">Data Policy</a>
+             <a href="philosophy.html">Philosophy</a>
+             <a href="about.html">About</a>
+             <a href="areas of interest.html">Areas of Interest</a>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars"></i>
+               </a>
+             </div>
+          
+             
         <div>
         <h1 style="padding-left:50px;" >Sessions</h1>
         <p style="padding-left:50px;">
@@ -53,7 +52,7 @@
 
 
         </div>
-        <div class="footer" style="position: fixed;" >
+        <div class="footer" style="position: relative;" >
             <br> <h4 style="color:#000;"> CONNECT with Us</h4> 
             <section data-social>
              <a href=# class="ion-social-facebook"><span>Facebook</span></a>
@@ -68,7 +67,16 @@
          &copy; Copyright 2019 Cate Counselling
         </p>
                    </div>
-            <script src="./script.js"></script>
+                   <script>
+                      function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                          x.className += " responsive";
+                        } else {
+                          x.className = "topnav";
+                        }
+                      }
+                      </script>
         </body>
         
         </html>
