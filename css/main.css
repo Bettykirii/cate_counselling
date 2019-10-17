@@ -6,20 +6,20 @@
 
 body {
     font-family: "Times New Roman", Times, serif;
-    background-color: #F5F1F1;
+    background-image: url("../images/th4.jpg");
     max-width:100%;
    
    
     overflow-y:scroll; 
     position:relative;
-    height: 300px;
+    
   }
 
 .text{
   text-align: center;
   height: 100px;
-  background-image: url("../images/petal.jpg");
-  color: #FFF;
+  background-image: url("../images/th7.jpg");
+  color: #fff;
   max-width:100%;
   height:auto;
 }
@@ -58,7 +58,8 @@ ul li a{
   display: block;
   text-decoration: none;
   text-transform: unset;
-  font-weight: bold
+  font-weight: bold;
+  
 }
 
 .sticky{
@@ -215,3 +216,4 @@ color: #fff,
       text-align: left;
     }
   }
+  

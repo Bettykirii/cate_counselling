@@ -11,7 +11,45 @@
 
 
   </head>
-  <body background="./images/petal.jpg">
+  <body >
+
+  <style>
+  
+  .container {
+          border-radius: 5px;
+          background-image: url("../images/th4.jpg");
+          padding: 10px;
+        }
+        
+        /* Create two columns that float next to eachother */
+        .column {
+          float: left;
+          width: 50%;
+          margin-top: 6px;
+          padding: 20px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+  
+  
+  
+  
+  </style>
+
+
      
     <div class="topnav" id="myTopnav">
             <div class="text">
@@ -20,28 +58,34 @@
                <a href="index.html" class="active">Home</a>
                <a href="fees & Sessions.html">Fees & Sessions</a>
                <a href="data policy.html">Data Policy</a>
-               <a href="philosophy.html">Philosophy</a>
+               
                <a href="about.html">About</a>
                <a href="areas of interest.html">Areas of Interest</a>
                <a href="resources.html">Resources</a>
-
+               <a href="contact.html">Contact Me</a>
                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                  <i class="fa fa-bars"></i>
                  </a>
                </div>
             
                
-        <div style="color:gainsboro">
-        <h1 style="padding-left:50px;" >Areas of Interest</h1>
-        <p style="padding-left:50px;">
-            The isolation and distress that comes from being “different”, not fitting in, not quite like others, being “othered”, “never good enough”, 
-            the feeling of being unseen and unheard, labeled.
-            The consequences of poverty and deprived childhoods, responsibilities beyond your capabilities,
-             missed childhoods because you had to “grow up fast” and care for and look after others 
-            People with Learning difficulties and their carers, disabled people,
-             LGBTQ+ and in particular from Black and Minority Ethnic backgrounds struggling with the intersectionality of race, sexuality and gender.
-            
-            
+        <div >
+            <div class="container">
+                <h1 style="text-align:center" >Areas of Interest</h1>
+                <div class="row">
+                  <div class="column">
+                    <img src="./images/petal.jpg" style="width:100%">
+                  </div>
+        
+        <p style="padding-top:50px;">
+            I am happy to work with anyone...
+The isolation and distress that comes from being “different”, not fitting in, not quite like others, being “othered”, 
+“never good enough”, the feeling of being unseen and unheard, labeled.
+<p style="padding-top:30px">The consequences of poverty and deprived childhoods, responsibilities beyond people’s capabilities, missed childhoods as a result of “growing up fast” to care for and look after others 
+People with learning difficulties and their carers, disabled people, </p>
+LGBTQ+ and in particular from Black and Minority Ethnic backgrounds struggling with the intersectionality of race, sexuality and gender.
+<p style="padding-top:30px">The impact of immigration whether that be voluntary or forced by economic, social, ethical or political reasons. According to Nabi (2014), studies indicate that immigrants are probably more affected by mental disorder than the native inhabitants. Leaving behind family, friends and all that people hold close and dear into a new environment, one that may be significantly different to what we know in terms of values, norms, language can have a huge impact on our well being. 
+
 
 
         </p>
@@ -50,7 +94,7 @@
 
         </div>
         <div class="footer" style="position: relative;" >
-            <br> <h4 style="color:gainsboro;"> CONNECT with Us</h4> 
+            <br> <h4 style="color:#000"> CONNECT with Us</h4> 
             <section data-social>
              <a href=# class="ion-social-facebook"><span>Facebook</span></a>
              <a href=# class="ion-social-twitter"><span>Twitter</span></a>
@@ -58,7 +102,7 @@
            </section>
            
          <hr>
-         <br><p style="color:gainsboro">
+         <br><p style="color:#000">
         
         
          &copy; Copyright 2019 Cate Counselling
